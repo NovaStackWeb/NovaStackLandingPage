@@ -95,3 +95,39 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 });
+document.addEventListener('DOMContentLoaded', function() {
+    const swiper = new Swiper('.portfolio-swiper', {
+        // Configurações básicas
+        slidesPerView: 1,
+        spaceBetween: 20,
+        loop: true, // Infinito
+        grabCursor: true, // Cursor de "mãozinha" para arrastar no PC
+        
+        // Paginação (bolinhas)
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+            dynamicBullets: true,
+        },
+
+        // Setas
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        // Responsividade (Breakpoints)
+        breakpoints: {
+            // Quando a tela for >= 768px (Tablet)
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+            },
+            // Quando a tela for >= 1200px (Desktop)
+            1200: {
+                slidesPerView: 3,
+                spaceBetween: 40,
+            }
+        }
+    });
+});

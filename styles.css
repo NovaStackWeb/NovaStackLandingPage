@@ -1,8 +1,8 @@
-/* ================= Variáveis Globais ================= */
+/* Variáveis Globais */
 :root {
     --bg-dark: #0a0e17; /* Fundo principal escuro */
     --bg-light: #121826; /* Fundo secundário */
-    --primary: #2563eb; /* Azul tecnológico */
+    --primary: #1945a5; /* Azul tecnológico */
     --primary-hover: #1d4ed8;
     --text-main: #f8fafc;
     --text-muted: #94a3b8;
@@ -11,7 +11,8 @@
     --border-color: rgba(255, 255, 255, 0.1);
 }
 
-/* ================= Reset e Configurações Base ================= */
+
+/* Reset e Configurações Base */
 * {
     margin: 0;
     padding: 0;
@@ -60,7 +61,6 @@ img {
     background-color: var(--bg-light);
 }
 
-/* ================= Tipografia ================= */
 h1, h2, h3, h4 {
     font-weight: 800;
     line-height: 1.2;
@@ -94,7 +94,7 @@ h1, h2, h3, h4 {
     font-size: 1.1rem;
 }
 
-/* ================= Botões ================= */
+
 .btn {
     display: inline-block;
     padding: 0.8rem 2rem;
@@ -148,7 +148,7 @@ h1, h2, h3, h4 {
     gap: 12px;
 }
 
-/* ================= Header e Navegação ================= */
+/* Header e Navegação */
 .header {
     position: fixed;
     top: 0;
@@ -230,8 +230,9 @@ h1, h2, h3, h4 {
     color: var(--primary);
 }
 
-/* ================= Hero Section ================= */
+/* Hero Section */
 .hero {
+    background: linear-gradient(135deg, #09101f 20%, #0f1e3e 100%, #09101f 50%);
     padding-top: 120px;
     min-height: 100vh;
     display: flex;
@@ -267,7 +268,7 @@ h1, h2, h3, h4 {
     border: 1px solid var(--border-color);
 }
 
-/* ================= Sobre ================= */
+/* Sobre */
 .sobre-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -303,7 +304,7 @@ h1, h2, h3, h4 {
     border-radius: 12px;
 }
 
-/* ================= Serviços ================= */
+/* Serviços */
 .grid-cards {
     display: grid;
     grid-template-columns: 1fr;
@@ -422,7 +423,28 @@ h1, h2, h3, h4 {
     font-size: 0.95rem;
 }
 
-/* ================= Contato ================= */
+/*portfolio */
+
+.portfolio-desc {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.portfolio-card .btn-block {
+    width: 100%;
+    text-align: center;
+    padding: 0.7rem 1rem;
+    font-size: 0.95rem;
+    border-width: 1px;
+}
+
+.portfolio-card .btn-outline:hover {
+    color: var(--text-main);
+    background-color: var(--primary);
+}
+
 .contato-container {
     display: flex;
     justify-content: center;
@@ -505,7 +527,6 @@ h1, h2, h3, h4 {
     box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
 }
 
-/* ================= Footer ================= */
 .footer {
     background-color: #05080f;
     padding: 3rem 0 1rem 0;
@@ -555,7 +576,7 @@ h1, h2, h3, h4 {
     font-size: 0.8rem;
 }
 
-/* ================= Animações Globais ================= */
+/* Animações Globais */
 .fade-in {
     opacity: 0;
     transform: translateY(20px);
@@ -567,7 +588,7 @@ h1, h2, h3, h4 {
     transform: translateY(0);
 }
 
-/* ================= Media Queries (Tablet e Desktop) ================= */
+/* Media Queries (Tablet e Desktop) */
 @media (min-width: 768px) {
     .section-title { font-size: 2.5rem; }
     
@@ -616,7 +637,7 @@ h1, h2, h3, h4 {
     .grid-cards {
         grid-template-columns: repeat(3, 1fr);
     }
-    /* Exceção para serviços: 4 colunas ou 2x2 */
+
     .servicos .grid-cards {
         grid-template-columns: repeat(2, 1fr);
     }
